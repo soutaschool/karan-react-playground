@@ -1,3 +1,191 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--basic-black: #000000;
+	--basic-silver: #c0c0c0;
+	--basic-gray: #808080;
+	--basic-white: #ffffff;
+	--basic-maroon: #800000;
+	--basic-red: #ff0000;
+	--basic-purple: #800080;
+	--basic-fuchsia: #ff00ff;
+	--basic-green: #008000;
+	--basic-lime: #00ff00;
+	--basic-olive: #808000;
+	--basic-yellow: #ffff00;
+	--basic-navy: #000080;
+	--basic-blue: #0000ff;
+	--basic-teal: #008080;
+	--basic-aqua: #00ffff;
+
+	--light-basic-black: #333333;
+	--light-basic-silver: #777777;
+	--light-basic-gray: #555555;
+	--light-basic-white: #eeeeee;
+	--light-basic-maroon: #800000;
+	--light-basic-red: #b30000;
+	--light-basic-purple: #800080;
+	--light-basic-fuchsia: #b300b3;
+	--light-basic-green: #008000;
+	--light-basic-lime: #2d7f2d;
+	--light-basic-olive: #666600;
+	--light-basic-yellow: #999900;
+	--light-basic-navy: #000080;
+	--light-basic-blue: #0000b3;
+	--light-basic-teal: #006666;
+	--light-basic-aqua: #009999;
+
+	--dark-basic-black: #121212;
+	--dark-basic-silver: #c0c0c0;
+	--dark-basic-gray: #aaaaaa;
+	--dark-basic-white: #f0f0f0;
+	--dark-basic-maroon: #ff4d4d;
+	--dark-basic-red: #ff3333;
+	--dark-basic-purple: #cc66cc;
+	--dark-basic-fuchsia: #ff66ff;
+	--dark-basic-green: #33cc33;
+	--dark-basic-lime: #66ff66;
+	--dark-basic-olive: #cccc33;
+	--dark-basic-yellow: #ffff33;
+	--dark-basic-navy: #6666ff;
+	--dark-basic-blue: #4d4dff;
+	--dark-basic-teal: #33cccc;
+	--dark-basic-aqua: #66ffff;
+
+	--basic-black: var(--light-basic-black);
+	--basic-silver: var(--light-basic-silver);
+	--basic-gray: var(--light-basic-gray);
+	--basic-white: var(--light-basic-white);
+	--basic-maroon: var(--light-basic-maroon);
+	--basic-red: var(--light-basic-red);
+	--basic-purple: var(--light-basic-purple);
+	--basic-fuchsia: var(--light-basic-fuchsia);
+	--basic-green: var(--light-basic-green);
+	--basic-lime: var(--light-basic-lime);
+	--basic-olive: var(--light-basic-olive);
+	--basic-yellow: var(--light-basic-yellow);
+	--basic-navy: var(--light-basic-navy);
+	--basic-blue: var(--light-basic-blue);
+	--basic-teal: var(--light-basic-teal);
+	--basic-aqua: var(--light-basic-aqua);
+	--background: var(--light-basic-white);
+	--foreground: var(--light-basic-black);
+	--font-family-sans: "Noto Sans JP", system-ui, -apple-system,
+		BlinkMacSystemFont, sans-serif;
+	--font-family-serif: "Noto Serif JP", Georgia, serif;
+	--font-family-monospace: "Fira Code", Menlo, monospace;
+
+	--font-regular: 400;
+	--font-medium: 500;
+	--font-bold: 700;
+	--font-extrabold: 800;
+
+	--font-xs: 0.75rem;
+	--font-sm: 0.875rem;
+	--font-base: 1rem;
+	--font-lg: 1.125rem;
+	--font-xl: 1.25rem;
+	--font-2xl: 1.5rem;
+	--font-3xl: 1.875rem;
+	--font-4xl: 2.25rem;
+	--font-5xl: 3rem;
+
+	--lh-base: 1.5;
+	--lh-heading: 1.3;
+	--lh-tight: 1.2;
+
+	--tracking-normal: normal;
+	--tracking-wide: 0.02em;
+	--tracking-wider: 0.05em;
+
+	--spacing-1: 4px;
+	--spacing-2: 8px;
+	--spacing-3: 12px;
+	--spacing-4: 16px;
+	--spacing-5: 20px;
+	--spacing-6: 24px;
+	--spacing-8: 32px;
+	--spacing-10: 40px;
+	--spacing-12: 48px;
+	--spacing-16: 64px;
+	--spacing-20: 80px;
+	--spacing-24: 96px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--basic-black: var(--dark-basic-black);
+		--basic-silver: var(--dark-basic-silver);
+		--basic-gray: var(--dark-basic-gray);
+		--basic-white: var(--dark-basic-white);
+		--basic-maroon: var(--dark-basic-maroon);
+		--basic-red: var(--dark-basic-red);
+		--basic-purple: var(--dark-basic-purple);
+		--basic-fuchsia: var(--dark-basic-fuchsia);
+		--basic-green: var(--dark-basic-green);
+		--basic-lime: var(--dark-basic-lime);
+		--basic-olive: var(--dark-basic-olive);
+		--basic-yellow: var(--dark-basic-yellow);
+		--basic-navy: var(--dark-basic-navy);
+		--basic-blue: var(--dark-basic-blue);
+		--basic-teal: var(--dark-basic-teal);
+		--basic-aqua: var(--dark-basic-aqua);
+		--background: var(--dark-basic-black);
+		--foreground: var(--dark-basic-white);
+	}
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: var(--font-family-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: var(--font-family-sans);
+	font-weight: var(--font-bold);
+	line-height: var(--lh-heading);
+}
+
+h1 {
+	font-size: var(--font-4xl);
+}
+h2 {
+	font-size: var(--font-3xl);
+}
+h3 {
+	font-size: var(--font-2xl);
+}
+h4 {
+	font-size: var(--font-xl);
+}
+h5 {
+	font-size: var(--font-lg);
+}
+h6 {
+	font-size: var(--font-base);
+	font-weight: var(--font-medium);
+}
+
+p,
+span,
+li,
+dd,
+dt {
+	font-family: var(--font-family-sans);
+	line-height: var(--lh-base);
+	letter-spacing: var(--tracking-normal);
+	margin: 0;
+}
+
+p + p {
+	margin-top: var(--spacing-3);
+}
