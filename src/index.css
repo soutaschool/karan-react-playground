@@ -37,6 +37,10 @@
 	--light-basic-teal: #006666;
 	--light-basic-aqua: #009999;
 
+  /* extend */
+  --light-basic-charcoal: #4b4b4b;
+  --light-basic-paper: #f7f7f7;
+
 	--dark-basic-black: #121212;
 	--dark-basic-silver: #c0c0c0;
 	--dark-basic-gray: #aaaaaa;
@@ -54,6 +58,10 @@
 	--dark-basic-teal: #33cccc;
 	--dark-basic-aqua: #66ffff;
 
+  /* extend */
+  --dark-basic-charcoal: #303030;
+  --dark-basic-paper: #1c1c1c;
+
 	--basic-black: var(--light-basic-black);
 	--basic-silver: var(--light-basic-silver);
 	--basic-gray: var(--light-basic-gray);
@@ -70,6 +78,11 @@
 	--basic-blue: var(--light-basic-blue);
 	--basic-teal: var(--light-basic-teal);
 	--basic-aqua: var(--light-basic-aqua);
+
+  /* extend */
+  --basic-charcoal: var(--light-basic-charcoal);
+  --basic-paper: var(--light-basic-paper);
+
 	--background: var(--light-basic-white);
 	--foreground: var(--light-basic-black);
 	--font-family-sans: "Noto Sans JP", system-ui, -apple-system,
@@ -134,6 +147,10 @@
 		--basic-aqua: var(--dark-basic-aqua);
 		--background: var(--dark-basic-black);
 		--foreground: var(--dark-basic-white);
+
+    /* extend */
+    --basic-charcoal: var(--dark-basic-charcoal);
+    --basic-paper: var(--dark-basic-paper);
 	}
 }
 

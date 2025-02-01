@@ -19,7 +19,11 @@ export default {
 				navy: "var(--basic-navy)",
 				blue: "var(--basic-blue)",
 				teal: "var(--basic-teal)",
-				aqua: "var(--basic-aqua)",
+        aqua: "var(--basic-aqua)",
+
+        // extend
+        charcoal: "var(--basic-charcoal)",
+        paper: "var(--basic-paper)",
 			},
 			fontFamily: {
 				sans: "var(--font-family-sans)",
